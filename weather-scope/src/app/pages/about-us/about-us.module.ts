@@ -3,15 +3,18 @@ import { CommonModule } from '@angular/common';
 
 import { AboutUsRoutingModule } from './about-us-routing.module';
 import { AboutUsComponent } from './about-us.component';
-
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
-  declarations: [
-    AboutUsComponent
-  ],
+  declarations: [AboutUsComponent],
   imports: [
     CommonModule,
-    AboutUsRoutingModule
-  ]
+    AboutUsRoutingModule,
+    MatGridListModule,
+    MatCardModule,
+    MatButtonModule,
+  ],
 })
-export class AboutUsModule { }
+export class AboutUsModule {}
